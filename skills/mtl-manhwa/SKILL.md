@@ -12,6 +12,7 @@ Terjemahkan komik/manhwa berbahasa Korea (KO), Jepang (JA), Inggris (EN), atau M
 - Baca gambar berdasarkan urutan halaman dan panel yang terlihat. Untuk webtoon vertikal, ikuti aliran panel dari atas ke bawah; di dalam panel, ikuti susunan balon/teks yang benar-benar tampak.
 - Tangani satu chapter sebagai satu pekerjaan dengan ledger/ceklist halaman atau berkas agar tidak ada halaman, panel, atau dialog yang terlewat atau diproses dua kali.
 - Terjemahkan dialog, monolog, narasi, dan SFX yang relevan dengan cerita. Abaikan watermark, logo, kredit scanlation, username, URL, promosi, nomor halaman, serta teks noncerita.
+- Periksa juga teks cerita yang tertanam pada papan/tanda, layar ponsel/UI, surat, buku, dan benda; klasifikasikan dengan kode Cosmic ID yang sesuai. Jika fungsi teks dekoratif tidak jelas, catat untuk tinjauan alih-alih otomatis memasukkannya atau membuangnya.
 - Gunakan bahasa Indonesia yang luwes dan sesuai konteks, karakter, relasi, emosi, dan register. Pertahankan maksud, bukan susunan kata sumber secara kaku. Jangan menambah informasi yang tidak ada pada sumber.
 - Tandai teks yang tetap tidak terbaca sebagai `[PERLU CEK MANUAL: lokasi]`; jangan menebak atau mengisi dialog dari konteks semata. Jika pembacaan ulang memperjelasnya, gunakan teks yang terverifikasi dan jangan tampilkan penanda itu di hasil TL bersih.
 - Jangan menyatakan OCR sempurna atau coverage lengkap jika sumber tidak terbaca/terpotong atau halaman tidak tersedia.
@@ -27,7 +28,7 @@ Kenali chapter, halaman/berkas, urutannya, bahasa sumber (KO/JA/EN/ZH), bahasa t
 1. Inspeksi gambar utuh terlebih dahulu. Ukuran atau rasio panjang saja bukan alasan untuk memecah gambar; pecah/crop hanya bila teks relevan tidak terbaca pada tampilan utuh.
 2. Jika bagian tertentu kecil atau buram, periksa crop area itu pada resolusi sumber. Untuk strip panjang yang keseluruhan teksnya tak terbaca, buat bagian berurutan dengan overlap yang cukup agar balon/panel di batas tidak terpotong. Ikuti panduan `read-special-images` bila tersedia.
 3. Baca semua tile/crop sesuai urutan; gunakan overlap untuk mengenali pengulangan, bukan untuk menyalin dialog dua kali. Rekonsiliasi perbedaan OCR memakai tampilan sumber yang paling jelas.
-4. Catat urutan panel/balon dan teks sumber yang terbaca sebelum menyatukan hasil. Jangan menganggap OCR otomatis benar. Jika teks tetap tak terpulihkan, masukkan hanya penanda tinjauan manual dalam bagian catatan.
+4. Catat urutan panel/balon dan setiap unit teks sumber yang terbaca sebelum menyatukan hasil. Untuk chapter multi-halaman atau gambar panjang, gunakan `templates/coverage-ledger.md`; untuk pekerjaan kecil, checklist ringkas dengan ID unit tetap cukup. Jangan menganggap OCR otomatis benar. Jika teks tetap tak terpulihkan, masukkan hanya penanda tinjauan manual dalam bagian catatan.
 
 ### 3. Kunci acuan cerita dan glossary
 
@@ -67,8 +68,11 @@ Ikuti definisi dan tata tulis wajib pada `references/cosmic-id.md`. Pedoman resm
 
 Periksa seluruh chapter, bukan hanya sampel:
 
+Lakukan tiga lintasan yang berbeda: (1) coverage—cocokkan halaman/panel dan unit sumber dengan ledger; (2) meaning—bandingkan tiap TL langsung dengan teks sumber dan konteks, bukan dengan hasil tebak balik; (3) polish—periksa keluwesan Indonesia, konsistensi istilah, dan format. Jangan menghapus penanda masalah sampai gambar atau acuan menyelesaikannya.
+
 - Cocokkan ledger halaman/panel dengan input; tidak ada yang terlewat atau terduplikasi.
 - Cocokkan setiap unit teks sumber relevan dengan tepat satu unit TL, kecuali sumber memang berulang.
+- Audit khusus negasi/penyangkalan, siapa melakukan apa kepada siapa, nama/panggilan, angka/jumlah, waktu/aspek, pertanyaan, dan pengulangan yang mungkin menandai perubahan emosi.
 - Periksa urutan baca, speaker bila diketahui, nuansa, akurasi, dan keterbacaan bahasa Indonesia.
 - Periksa preferensi diksi: `kau` (bukan `kamu`), `apa` (bukan `apakah`), serta pemilihan `saya/Anda`, `kalau/jika`, `sudah/telah`, dan `kenapa/mengapa` sesuai tingkat formalitas.
 - Periksa aturan honorifik dan romanisasi sesuai bahasa sumber, Konglish khusus sumber Korea, tingkat umpatan, nama perusahaan/grup, serta kecocokan prefiks Cosmic ID dengan jenis teks.
@@ -98,4 +102,6 @@ Buat dokumen Google Docs hanya jika konektor/tool Google Docs benar-benar tersed
 - `references/glossary.md` — skema enam tabel dan aturan konsistensi glossary.
 - `references/source-languages.md` — aturan khusus Korea, Jepang, Inggris, dan Mandarin serta romanisasi.
 - `references/approved-sample-ch06.md` — contoh TL dan glossary yang dinyatakan pengguna sudah disetujui editor; gunakan sesuai batas seri/proyek yang dijelaskan di dalamnya.
+- `templates/coverage-ledger.md` — pelacakan halaman/panel/unit teks dan status OCR/TL/QC.
+- `templates/editor-approved-example.md` — formulir untuk menambahkan contoh editor-approved per bahasa tanpa mengarang standar.
 - `templates/chapter-output.md` — kerangka hasil chapter.

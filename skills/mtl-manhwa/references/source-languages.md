@@ -41,4 +41,4 @@ Skill menerima Korea, Jepang, Inggris, dan Mandarin/Chinese sebagai bahasa sumbe
 
 - Urutan prioritas: ejaan resmi/publikasi → glossary proyek → pembacaan yang terlihat (misalnya furigana) → romanisasi standar yang sesuai bahasa → tandai untuk cek manual.
 - Simpan bentuk tulisan asli pada kolom `Original (원문)` glossary. Simpan romanisasi/ejaan Inggris yang terverifikasi pada `English/Romanization`; jangan menukar keduanya.
-- Nama merek/perusahaan tidak diterjemahkan; gunakan ejaan resminya. Nama grup/kelompok diterjemahkan ke Indonesia sesuai pedoman Cosmic ID dan dicatat konsisten.
+- Nama merek/perusahaan tidak diterjemahkan; gunakan ejaan resminya. Untuk grup/kelompok, gunakan padanan resmi/terlokalisasi yang dicatat konsisten; pilih bentuk Indonesia bila memang lazim, tetapi jangan mengganti nama resmi yang sudah mapan dengan terjemahan literal.

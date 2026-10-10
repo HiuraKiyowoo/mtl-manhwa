@@ -35,5 +35,7 @@ skills/mtl-manhwa/
 │   ├── glossary.md
 │   └── source-languages.md
 └── templates/
+    ├── coverage-ledger.md
+    ├── editor-approved-example.md
     └── chapter-output.md
 ```
