@@ -1,39 +1,40 @@
-# [Judul manhwa] — Chapter [nomor]
+# [Judul komik/manhwa] — Chapter [nomor] — [KO/JA/EN/ZH → ID]
 
 ## Translation
 
-[Hasil TL final sesuai pedoman Cosmic ID yang telah diverifikasi. Tanpa baris kosong di antara dialog, kecuali pedoman menyatakan lain.]
+[Hasil TL final sesuai pedoman Cosmic ID yang berlaku. Tanpa baris kosong di antara dialog, kecuali editor menyatakan lain.]
 
 ## Glossary
 
 ### Name
-| Name | 한(漢) | Eng | ID | Gender (F/M) | Ext. |
+| Name | Original (원문) | English/Romanization | ID | Gender (F/M) | Ext. |
 |---|---|---|---|---|---|
 
 ### Terms
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ### Place
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ### Groups
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ### Monster
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ### Medicine/Items
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Review Notes
 
+- Bahasa sumber terdeteksi/dikonfirmasi:
 - Halaman/panel yang perlu cek manual:
-- Konflik atau ketidakpastian OCR:
+- Konflik atau ketidakpastian OCR/romanisasi:
 - Perubahan glossary dan alasan:
-- Status verifikasi format Cosmic ID:
+- Status format Cosmic ID:
 - Status coverage QC:

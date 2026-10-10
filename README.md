@@ -1,10 +1,10 @@
-# MTL Manhwa
+# MTL Manhwa/Comics — KO / JA / EN / ZH → Indonesian
 
-Skill untuk menerjemahkan manhwa/webtoon Korea ke bahasa Indonesia dengan format Cosmic ID, menjaga konsistensi glossary, dan menandai bagian OCR yang perlu ditinjau.
+Skill untuk menerjemahkan komik/manhwa berbahasa Korea, Jepang, Inggris, atau Mandarin/Chinese ke bahasa Indonesia. Mendukung format Cosmic ID, glossary lintas bahasa, dan penandaan OCR yang perlu ditinjau.
 
 ## Pasang dengan `npx skills`
 
-Repositori ini privat. Pastikan GitHub CLI sudah terautentikasi pada akun yang memiliki akses ke repo, lalu jalankan:
+Repositori ini publik. Jalankan:
 
 ```bash
 npx skills add HiuraKiyowoo/mtl-manhwa --skill mtl-manhwa --global --copy
@@ -22,7 +22,7 @@ Untuk memperbarui instalasi:
 npx skills update mtl-manhwa
 ```
 
-`npx skills` menggunakan kredensial Git/GitHub CLI yang telah dikonfigurasi pada mesin pengguna untuk mengakses repo privat; jangan menempelkan token ke command atau file.
+Bahasa sumber yang didukung: Korea (KO), Jepang (JA), Inggris (EN), dan Mandarin/Chinese (ZH). Bahasa target: Indonesia.
 
 ## Isi skill
 
@@ -32,7 +32,8 @@ skills/mtl-manhwa/
 ├── references/
 │   ├── approved-sample-ch06.md
 │   ├── cosmic-id.md
-│   └── glossary.md
+│   ├── glossary.md
+│   └── source-languages.md
 └── templates/
     └── chapter-output.md
 ```

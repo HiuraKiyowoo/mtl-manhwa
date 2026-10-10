@@ -1,43 +1,43 @@
 # Glossary chapter
 
-Pertahankan kategori, urutan kolom, serta istilah yang sudah dikunci pada chapter sebelumnya. Tambah hanya entri yang teramati pada cerita. Hanja (`漢`) dicatat hanya jika memang tersedia/terverifikasi; jangan mengarangnya. Gunakan `—` untuk nilai yang tidak diketahui, bukan tebakan.
+Gunakan skema ini untuk sumber Korea, Jepang, Inggris, dan Mandarin. Pertahankan kategori, urutan kolom, serta istilah yang sudah dikunci pada chapter sebelumnya. Tambah hanya entri yang teramati pada cerita. `Original (원문)` adalah bentuk persis pada bahasa/aksara sumber (Hangul, Kanji/Kana, Hanzi, atau Inggris); jangan menggantinya dengan tebakan romanisasi. Gunakan `—` untuk nilai yang tidak diketahui.
 
 ## Name
 
-| Name | 한(漢) | Eng | ID | Gender (F/M) | Ext. |
+| Name | Original (원문) | English/Romanization | ID | Gender (F/M) | Ext. |
 |---|---|---|---|---|---|
 
 `Gender (F/M)` hanya diisi `F` atau `M` jika jelas/terkonfirmasi dari sumber. Jangan simpulkan gender hanya dari nama atau tampilan.
 
 ## Terms
 
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Place
 
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Groups
 
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Monster
 
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Medicine/Items
 
-| 한(漢) | Eng | ID | Ext. |
+| Original (원문) | English/Romanization | ID | Ext. |
 |---|---|---|---|
 
 ## Konsistensi dan pembaruan
 
 - Gunakan satu entri kanonis per istilah/entitas; hindari duplikasi karena variasi spasi atau romanisasi tanpa alasan.
-- `Eng` adalah padanan Inggris bila diberikan/dapat ditetapkan dari acuan; jangan menerjemahkan balik dan mengarangnya jika tidak diketahui.
+- `English/Romanization` adalah ejaan resmi dalam bahasa Inggris atau romanisasi yang terverifikasi; ikuti `references/source-languages.md` bila perlu membuat romanisasi kerja.
 - `ID` adalah bentuk Indonesia yang dipakai konsisten dalam TL.
 - `Ext.` menyimpan keterangan singkat yang relevan/terkonfirmasi (misalnya alias atau hubungan), bukan lore spekulatif.
 - Bila ada perubahan terhadap glossary lama, simpan nilai baru secara konsisten dan jelaskan alasan serta referensinya di `Review Notes`.

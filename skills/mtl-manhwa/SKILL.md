@@ -1,18 +1,18 @@
 ---
 name: mtl-manhwa
-description: Translate Korean manhwa/webtoon pages into natural, context-aware Indonesian; preserve reading order, apply a verified Cosmic ID style guide, maintain a six-category chapter glossary, and flag uncertain OCR. Use for Korean-to-Indonesian manhwa translation, chapter glossary work, or editor-ready Cosmic ID output.
+description: Translate Korean, Japanese, English, or Chinese manhwa/webtoon/comic pages into natural Indonesian; preserve reading order, apply Cosmic ID formatting, maintain a six-category glossary, and flag uncertain OCR. Use for KO/JA/EN/ZH-to-Indonesian comic translation and editor-ready Cosmic ID output.
 ---
 
-# MTL Manhwa — Korean to Indonesian
+# MTL Manhwa/Comics — KO / JA / EN / ZH to Indonesian
 
-Terjemahkan manhwa Korea ke bahasa Indonesia yang natural, konsisten, dan siap diperiksa editor. Pisahkan hasil terjemahan bersih dari catatan OCR/QC. Jangan mengarang teks sumber, detail glossary, atau aturan format.
+Terjemahkan komik/manhwa berbahasa Korea (KO), Jepang (JA), Inggris (EN), atau Mandarin/Chinese (ZH) ke bahasa Indonesia yang natural, konsisten, dan siap diperiksa editor. Pisahkan hasil terjemahan bersih dari catatan OCR/QC. Terapkan aturan sumber yang sesuai bahasanya; jangan menggeneralisasi honorifik atau romanisasi Korea ke bahasa lain. Jangan mengarang teks sumber, detail glossary, atau aturan format.
 
 ## Aturan utama
 
 - Baca gambar berdasarkan urutan halaman dan panel yang terlihat. Untuk webtoon vertikal, ikuti aliran panel dari atas ke bawah; di dalam panel, ikuti susunan balon/teks yang benar-benar tampak.
 - Tangani satu chapter sebagai satu pekerjaan dengan ledger/ceklist halaman atau berkas agar tidak ada halaman, panel, atau dialog yang terlewat atau diproses dua kali.
 - Terjemahkan dialog, monolog, narasi, dan SFX yang relevan dengan cerita. Abaikan watermark, logo, kredit scanlation, username, URL, promosi, nomor halaman, serta teks noncerita.
-- Gunakan bahasa Indonesia yang luwes dan sesuai konteks, karakter, relasi, emosi, dan register. Pertahankan maksud, bukan susunan kata Korea secara kaku. Jangan menambah informasi yang tidak ada pada sumber.
+- Gunakan bahasa Indonesia yang luwes dan sesuai konteks, karakter, relasi, emosi, dan register. Pertahankan maksud, bukan susunan kata sumber secara kaku. Jangan menambah informasi yang tidak ada pada sumber.
 - Tandai teks yang tetap tidak terbaca sebagai `[PERLU CEK MANUAL: lokasi]`; jangan menebak atau mengisi dialog dari konteks semata. Jika pembacaan ulang memperjelasnya, gunakan teks yang terverifikasi dan jangan tampilkan penanda itu di hasil TL bersih.
 - Jangan menyatakan OCR sempurna atau coverage lengkap jika sumber tidak terbaca/terpotong atau halaman tidak tersedia.
 
@@ -20,7 +20,7 @@ Terjemahkan manhwa Korea ke bahasa Indonesia yang natural, konsisten, dan siap d
 
 ### 1. Terima dan inventarisasi input
 
-Kenali chapter, halaman/berkas, urutannya, bahasa target, glossary/style sheet sebelumnya, dan pedoman Cosmic ID yang diberikan. Jika input berisi beberapa gambar, susun daftar sesuai nama/urutan yang diberikan pengguna; jangan mengurutkan alfabetis jika itu bertentangan dengan urutan sumber. Catat halaman yang hilang/duplikat/ambigu.
+Kenali chapter, halaman/berkas, urutannya, bahasa sumber (KO/JA/EN/ZH), bahasa target Indonesia, glossary/style sheet sebelumnya, dan pedoman Cosmic ID yang diberikan. Ikuti bahasa yang disebut pengguna; jika tidak disebut, deteksi dari teks dan konteks. Jangan menganggap Hanzi/Kanji saja cukup untuk membedakan Mandarin dan Jepang. Jika sumber tetap ambigu, tanyakan atau tandai untuk cek manual. Jika input berisi beberapa gambar, susun daftar sesuai nama/urutan yang diberikan pengguna; jangan mengurutkan alfabetis jika itu bertentangan dengan urutan sumber. Catat halaman yang hilang/duplikat/ambigu.
 
 ### 2. Baca gambar dan pulihkan teks
 
@@ -33,14 +33,15 @@ Kenali chapter, halaman/berkas, urutannya, bahasa target, glossary/style sheet s
 
 - Baca glossary chapter sebelumnya terlebih dahulu. Entri yang sudah ditetapkan dipertahankan kecuali ada bukti baru atau alasan kuat; jelaskan perubahan di catatan.
 - Tambahkan hanya nama, istilah, tempat, kelompok/organisasi, monster, obat, atau item yang benar-benar muncul dan dapat diidentifikasi.
-- Jangan menebak hanja, ejaan Inggris, gender, arti, atau detail `Ext.`. Kosongkan sel atau tulis `—` bila tidak diketahui. Jangan buat baris duplikat; cocokkan entri berdasarkan istilah sumber Korea dan terjemahan yang sudah ada.
+- Jangan menebak bacaan/romanisasi, ejaan Inggris, gender, arti, atau detail `Ext.`. Kosongkan sel atau tulis `—` bila tidak diketahui. Jangan buat baris duplikat; cocokkan entri berdasarkan bentuk sumber dan terjemahan yang sudah ada.
 - Pertahankan enam kategori dan kolom sebagaimana didefinisikan di `references/glossary.md`.
-- Nama perusahaan/merek tidak diterjemahkan; pertahankan romanisasi/nama resminya (misalnya Samsung). Nama grup/kelompok diterjemahkan ke Indonesia; catat padanan kanonisnya di glossary.
+- Nama perusahaan/merek tidak diterjemahkan; pertahankan ejaan resminya (misalnya Samsung). Untuk grup/kelompok, gunakan padanan terjemahan/terlokalisasi resmi dan catat bentuk kanonis di glossary; pilih bentuk Indonesia bila memang lazim, tetapi jangan mengganti nama resmi yang sudah mapan dengan terjemahan literal.
+- Baca `references/source-languages.md` untuk aturan KO/JA/EN/ZH. Terapkan hanya panduan bahasa sumber yang cocok dengan chapter tersebut.
 - Gunakan `references/approved-sample-ch06.md` sebagai contoh TL yang disetujui untuk gaya dan bentuk output. Glossary chapter 6 di dalamnya hanya boleh dipakai sebagai glossary aktif bila seri yang sedang diterjemahkan dipastikan sama; bila judul/seri belum jelas, tanyakan atau perlakukan hanya sebagai contoh, jangan campurkan entri ke glossary proyek lain.
 
 ### 4. Terjemahkan
 
-Terjemahkan setiap unit teks satu kali, sambil mempertahankan urutan baca dan keterkaitan speaker/aksi yang dapat dipastikan. Pertahankan nama/panggilan, tingkat kesopanan, suara khas karakter, dan konsistensi istilah glossary. Pertahankan honorifik Korea `-nim`, `-ssi`, `-unnie`, dan `-hyung` apa adanya. Terjemahkan sapaan kekerabatan seperti `eommonim` dan `abeojinim` ke bahasa Indonesia yang sesuai konteks karena tidak familier bagi banyak pembaca. Pertahankan Konglish sebagai bahasa Inggris yang dimaksud. Jangan menyensor umpatan; terjemahkan setara dengan tingkat kekasaran sumber, jangan diperhalus atau diperkeras. Bila speaker tidak dapat dikenali, jangan menetapkan identitas berdasarkan tebakan; pertahankan dialog tanpa label speaker jika format mengizinkan, atau tandai di catatan.
+Terjemahkan setiap unit teks satu kali, sambil mempertahankan urutan baca dan keterkaitan speaker/aksi yang dapat dipastikan. Pertahankan nama/panggilan, tingkat kesopanan, suara khas karakter, dan konsistensi istilah glossary. Terapkan aturan honorifik, idiom, romanisasi, dan sapaan dari `references/source-languages.md` sesuai bahasa sumber; jangan menerapkan aturan Korea ke bahasa Jepang/Mandarin/Inggris. Jangan menyensor umpatan; terjemahkan setara dengan tingkat kekasaran sumber, jangan diperhalus atau diperkeras. Bila speaker tidak dapat dikenali, jangan menetapkan identitas berdasarkan tebakan; pertahankan dialog tanpa label speaker jika format mengizinkan, atau tandai di catatan.
 
 #### Preferensi diksi dan kata ganti
 
@@ -70,7 +71,8 @@ Periksa seluruh chapter, bukan hanya sampel:
 - Cocokkan setiap unit teks sumber relevan dengan tepat satu unit TL, kecuali sumber memang berulang.
 - Periksa urutan baca, speaker bila diketahui, nuansa, akurasi, dan keterbacaan bahasa Indonesia.
 - Periksa preferensi diksi: `kau` (bukan `kamu`), `apa` (bukan `apakah`), serta pemilihan `saya/Anda`, `kalau/jika`, `sudah/telah`, dan `kenapa/mengapa` sesuai tingkat formalitas.
-- Periksa honorifik, Konglish, umpatan, nama perusahaan/merek, nama grup, serta kecocokan prefiks Cosmic ID dengan jenis teks.
+- Periksa aturan honorifik dan romanisasi sesuai bahasa sumber, Konglish khusus sumber Korea, tingkat umpatan, nama perusahaan/grup, serta kecocokan prefiks Cosmic ID dengan jenis teks.
+- Pastikan aturan dan romanisasi cocok dengan bahasa sumber; khususnya jangan menyamakan Hanzi/Kanji atau menerapkan honorifik Korea ke bahasa lain.
 - Periksa ulang teks OCR yang meragukan pada gambar/crop asli; tandai yang belum terpecahkan.
 - Cocokkan nama dan istilah dengan glossary lama serta ejaan antarhalaman.
 - Periksa kode dan tata tulis Cosmic ID terhadap `references/cosmic-id.md`.
@@ -94,5 +96,6 @@ Buat dokumen Google Docs hanya jika konektor/tool Google Docs benar-benar tersed
 
 - `references/cosmic-id.md` — syarat penggunaan kode Cosmic ID dan penanganan ketika pedoman belum tersedia.
 - `references/glossary.md` — skema enam tabel dan aturan konsistensi glossary.
+- `references/source-languages.md` — aturan khusus Korea, Jepang, Inggris, dan Mandarin serta romanisasi.
 - `references/approved-sample-ch06.md` — contoh TL dan glossary yang dinyatakan pengguna sudah disetujui editor; gunakan sesuai batas seri/proyek yang dijelaskan di dalamnya.
 - `templates/chapter-output.md` — kerangka hasil chapter.
