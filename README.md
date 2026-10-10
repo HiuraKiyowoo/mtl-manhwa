@@ -24,6 +24,8 @@ npx skills update mtl-manhwa
 
 Bahasa sumber yang didukung: Korea (KO), Jepang (JA), Inggris (EN), dan Mandarin/Chinese (ZH). Bahasa target: Indonesia.
 
+Untuk halaman sangat panjang, skill memeriksa tile berurutan dari atas ke bawah dengan overlap dan memvalidasi seluruh cakupan—bukan berhenti setelah menemukan watermark atau SFX pertama.
+
 ## Isi skill
 
 ```text
