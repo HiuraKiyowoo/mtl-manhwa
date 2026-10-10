@@ -55,7 +55,6 @@ SFX: Puuu...
 
 | 한(漢) | Eng | ID | Ext. |
 |---|---|---|---|
-| 흑암룡 | Dark Rock Dragon | Naga Dark Rock | Jenis / gelar naga |
 | 칠죄종 | Seven Deadly Sins | Tujuh Dosa Besar | Kelompok iblis yang mewakili dosa besar |
 | 악마사냥꾼 | Demon Hunter | Pemburu Iblis | Kelas pekerjaan (Job Class) |
 | 아르카나행 | Trip to Arcana | Perjalanan ke Arcana | Perjalanan menuju Arcana |
@@ -83,7 +82,9 @@ SFX: Puuu...
 
 ### Monster
 
-Tidak ada entri yang disertakan pada pembaruan glossary ini.
+| 한(漢) | Eng | ID | Ext. |
+|---|---|---|---|
+| 흑암룡 | Dark Rock Dragon | Naga Dark Rock | Jenis / gelar naga |
 
 ### Medicine/Items
 

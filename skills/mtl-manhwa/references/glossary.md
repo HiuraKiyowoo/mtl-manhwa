@@ -9,6 +9,15 @@ Gunakan skema ini untuk sumber Korea, Jepang, Inggris, dan Mandarin. Pertahankan
 
 `Gender (F/M)` hanya diisi `F` atau `M` jika jelas/terkonfirmasi dari sumber. Jangan simpulkan gender hanya dari nama atau tampilan.
 
+## Panduan memilih kategori
+
+- `Name`: karakter/individu bernama.
+- `Terms`: konsep, sistem, job class, gelar, kemampuan, atau istilah umum cerita; **bukan** nama spesies/jenis monster.
+- `Place`: lokasi, wilayah, kerajaan, atau domain geografis.
+- `Groups`: organisasi, kelompok, atau faksi.
+- `Monster`: monster, spesies/jenis monster, ras makhluk nonmanusia yang diperlakukan sebagai monster, serta nama monster yang relevan. Contoh: `흑암룡` (Naga Dark Rock) masuk kategori ini, bukan `Terms`.
+- `Medicine/Items`: obat, benda, konsumsi, dan item.
+
 ## Terms
 
 | Original (원문) | English/Romanization | ID | Ext. |
